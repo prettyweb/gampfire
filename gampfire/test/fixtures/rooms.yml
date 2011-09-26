@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  topic: MyString
+  root_auth_code: MyString
+  last_message_id: 1
+  private: false
+
+two:
+  topic: MyString
+  root_auth_code: MyString
+  last_message_id: 1
+  private: false

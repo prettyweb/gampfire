@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Topic:</b>
+  <%= @room.topic %>
+</p>
+
+<p>
+  <b>Root auth code:</b>
+  <%= @room.root_auth_code %>
+</p>
+
+<p>
+  <b>Last message:</b>
+  <%= @room.last_message_id %>
+</p>
+
+<p>
+  <b>Private:</b>
+  <%= @room.private %>
+</p>
+
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>
