@@ -1,0 +1,16 @@
+%h1
+  Topic:
+  = @room.topic
+
+.user_list_box
+  .heading
+    Users List
+  .user_list
+    = render :partial => 'users_list', :locals => {:users => @room.users}
+
+.messages
+  
+.message_dialog
+  %textarea.new_message
+  #new_message_button
+    Send

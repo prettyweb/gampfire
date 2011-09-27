@@ -1,0 +1,8 @@
+- users.each do |user|
+  - if user.id == @user.id
+    .user.current
+      = user.nickname
+  - else
+    .user
+      = user.nickname
+      

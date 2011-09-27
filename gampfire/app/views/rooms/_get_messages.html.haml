@@ -1,0 +1,20 @@
+- messages.reverse.each do |message|
+  .message
+    [
+    = message.created_at
+    ]
+    - if message.user == @user
+      %span.user.current
+        = message.user.nickname 
+    - else
+      %span.user
+        = message.user.nickname
+    said:
+    = message.body
+
+:javascript
+  (function () {
+    window.scroll(0, document.height);
+    var from_message_id = #{new_from_message_id};
+    window.chatroom.schedule_update_messages(from_message_id);
+    })();

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  room_id: 1
+  body: MyString
+
+two:
+  user_id: 1
+  room_id: 1
+  body: MyString
+# == Schema Information
+#
+# Table name: messages
+#
+#  id         :integer         not null, primary key
+#  user_id    :integer
+#  room_id    :integer
+#  body       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+

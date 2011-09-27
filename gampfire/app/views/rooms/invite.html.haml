@@ -1,0 +1,4 @@
+%h1 Successfully invited user
+
+Please ask the user to 
+= link_to 'login', '/rooms/' + @room.id.to_s + '/' + @user.auth_code + '/chat'

@@ -1,4 +1,18 @@
 Gampfire::Application.routes.draw do
+  resources :messages
+
+  resources :users
+
+  match 'rooms/:id/:auth_code/chat' => 'rooms#chat'
+  post 'rooms/:id/:auth_code/get_message_update' => 'rooms#get_message_update'
+
+  post 'rooms/:id/:auth_code/update_nickname' => 'rooms#update_nickname'
+
+  match 'rooms/:id/:auth_code/get_user_list' => 'rooms#get_user_list'
+  post 'rooms/:id/:auth_code/messages' => 'rooms#new_message'
+
+  post 'rooms/:id/invite' => 'rooms#invite'
+
   resources :rooms
 
   # The priority is based upon order of creation:

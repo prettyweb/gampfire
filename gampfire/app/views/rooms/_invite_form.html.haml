@@ -1,0 +1,5 @@
+= form_tag('/rooms/' + @room.id.to_s + '/invite', :method => :post) do 
+  Invite another user to this room
+  = submit_tag 'Invite'
+
+
